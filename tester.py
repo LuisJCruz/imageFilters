@@ -6,7 +6,6 @@ import filecmp
 
 # The following CONSTANTS point to the folders/directories with images 
 # and the names of the functions in the student code file to test
-# CHANGE AT YOUR OWN RISK
 RESULT_DIR = 'resulting_images'
 IMAGE_DIR = 'images'
 EXPECTED_DIR = 'expected_images'
@@ -48,8 +47,7 @@ if __name__ == '__main__':
     except:
         print('Could not run the given file:', args[0])
         sys.exit(-2)
-    # Here we already have the student functions running on this file
-    # make a directory for the resulting images if needed
+    # Here we run the functions on this file
     if not os.path.isdir(RESULT_DIR):
         os.mkdir(RESULT_DIR)
     # for all images in the image directory
